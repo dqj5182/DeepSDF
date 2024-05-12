@@ -91,6 +91,17 @@ In order to use mesh data for training a DeepSDF model, the mesh will need to be
 With these dependencies, the build process follows the standard CMake procedure:
 
 ```
+# Build CLI11
+git clone https://github.com/CLIUtils/CLI11
+cd CLI11/
+mkdir build
+cd build
+git submodule update --init
+cmake ..
+cmake --build .
+sudo cmake --install .
+
+# Build DeepSDF
 mkdir build
 cd build
 cmake ..
